@@ -1,4 +1,4 @@
-with open("./input.txt", "r") as file:
+with open("C:/Users/koosk/Documents/GitHub/advent-of-code-2022/1/input_heleen.txt", "r") as file:
     most_calories = 0
     current_calories = 0
 
