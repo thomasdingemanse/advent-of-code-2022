@@ -1,5 +1,5 @@
 def part_1():
-    with open("./input.txt", "r") as file:
+    with open("C:/Users/koosk/Documents/GitHub/advent-of-code-2022/1/input_heleen.txt", "r") as file:
         most_calories = 0
         current_calories = 0
 
@@ -17,7 +17,7 @@ def part_1():
         print(most_calories)
 
 def part_2():
-    with open("./input.txt", "r") as file:
+    with open("C:/Users/koosk/Documents/GitHub/advent-of-code-2022/1/input_heleen.txt", "r") as file:
         most_calories = 0
         second_most_calories = 0
         third_most_calories = 0
