@@ -1,0 +1,6 @@
+# Editor / IDE configs
+.idea
+.vscode
+
+# C binaries
+main
