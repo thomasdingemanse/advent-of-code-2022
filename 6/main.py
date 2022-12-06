@@ -1,4 +1,4 @@
-part = 2
+part = 1
 
 def is_marker(datastream_buffer, position, marker_length):
 
@@ -20,6 +20,7 @@ def is_marker(datastream_buffer, position, marker_length):
 with open("input.txt", "r") as input:
     datastream_buffer = input.read()
     position = 0
+    found = False
     
     # The marker length is different for part 2,
     # that's the only change compared to part 1.
@@ -41,7 +42,9 @@ with open("input.txt", "r") as input:
         if is_marker(datastream_buffer, position, marker_length):
             
             # The positions are 1-indexed, so add 1 before printing.
-            print(position + 1)
+            if not found:
+                print(position + 1)
+                found = True
 
             # Skip to the end of the marker.
             position += marker_length
